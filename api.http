@@ -1,0 +1,45 @@
+### getUsers
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### getUserById
+GET http://localhost:3000/users/1
+Content-Type: application/json
+
+### createUser1
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+  "name": "Lucas Ferreira",
+  "email": "lucas@lucas.com",
+  "password": "123123",
+  "age": 30
+}
+
+### createUser2
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+  "name": "Lilia Ferreira",
+  "email": "lilia@lilia.com",
+  "age": 31,
+  "password": "1230",
+  "isAdmin": false
+}
+
+### createUser3
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+  "name": "Gael",
+  "email": "gael@gael.com",
+  "password": "123123444",
+  "age": 1
+}
+
+### deleteUser
+DELETE  http://localhost:3000/users/delete/7
+Content-Type: application/json
